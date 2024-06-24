@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="filter_method" content="width=device-width, initial-scale=1.0">
+        <title> map </title>
+    </head>
+
+    <body>
+        <script>
+
+            // arrname.reduce(function , accumulator default value)
+
+            // function can take 4 arguments
+
+            // arr.reduce(acc value,ele,index,array)
+
+            // this method returns a single vlaue
+
+            var arr = [7,9,8,9,10,78]
+
+            arr.reduce(function(acc,ele,index,arr){
+                if(acc>ele){
+                    return acc
+                }
+                else{
+                    return ele
+                }
+            },arr[0])
+            
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> map </title>
+        <!-- set timeout() and set interval() functions -->
+    </head>
+
+    <body>
+        <script>
+            var birthyears = [2000,2015,2017,2018,2020]
+
+            var ages = birthyears.map(ageFind)
+            function ageFind(ele,index,arr){
+                console.log(ele)
+                console.log(index)
+                console.log(arr)
+                let age = 2021-ele
+                return age;
+            }
+            console.table(birthyears)
+            console.table(ages)
+
+        </script>
+
+    </body>
+</html>

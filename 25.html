@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Events</title>
+
+        <style>
+            #b1{
+                background-color: blueviolet;
+                color: white;
+                outline: none;
+                border: none;
+                height: 60px;
+                width: 230px;
+            }
+
+            #special{
+                position:absolute;
+                top:40%;
+                left:40%;
+            }
+
+            #sp{
+                height:30px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="special">
+            name: <input id="sp" type="text"/>  <br> <br>
+            <button id="b1" onclick="change(event);"> change background </button>
+        </div>
+
+            <script>
+                function change(e){
+                    var letters='0123456789ABCDEF';
+                    var color='#';
+                    for (var i = 0; i<0; i++);
+                    var color='#'
+                    for (var i = 0; i < 6; i++){
+                        var r=Math.floor(Math.random()*16);
+                        color=color+letters[r]
+                    }
+                    document.body.style.background = color
+                }
+                var s = document.getElementById('sp')
+                s.onfocus = change2
+                s.onblur = change3
+            </script>
+
+    </body>
+
+</html>
